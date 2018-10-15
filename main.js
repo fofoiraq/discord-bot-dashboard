@@ -12,7 +12,7 @@ const now = require("performance-now");
 
 const chalk = require('chalk');
 
-const app = require("./../api/app");
+const app = require("./api/app");
 
 const commandPrefix = config.prefix;
 
