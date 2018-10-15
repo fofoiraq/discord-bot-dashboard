@@ -5,7 +5,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require("./config.json");
 const botDataJson = require("./discord-bot-sourcefiles/botData.json");
-const botCommands = require("../bot-commands.json");
+const botCommands = require("./bot-commands.json");
 // Delete this line when you´re using this project for public usages.
 const now = require("performance-now");
 
