@@ -3,10 +3,10 @@ var exports = module.exports = {};
 const fs = require("fs");
 const Discord = require("discord.js");
 const client = new Discord.Client();
+const config = require("../config.json");
 const botDataJson = require("./../botData.json");
 const botCommands = require("./bot-commands.json");
 // Delete this line when you´re using this project for public usages.
-
 const now = require("performance-now");
 
 
@@ -100,7 +100,7 @@ client.on('message', async(message) => {
 // To use prv_config, create a file called "private_config.json" inside the main directory.
 // .gitignore will ignore this file when you want to commit and push.
 // So nobody can get your bot token.
-client.login(process.env.Fadi);
+client.login(config.token);
 
 /**
  * Set a game status for the bot.
